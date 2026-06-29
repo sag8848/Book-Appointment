@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,13 +8,61 @@ const Navbar = () => {
     <div className='flex item-center justify-around gap-10 m-10 z-10'>
         <h1 className='text-[#135D8C] font-bold text-3xl'>Makalu Everest Hospital</h1>
          <ul className="flex gap-10 text-[#129DA8] font-medium pt-3">
-      <li className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]">Home</li>
-      <li className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]">About Us</li>
-      <li className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]">Departments</li>
-      <li className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]">Services</li>
-      <li className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]">Contact Us</li>
-      <li className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]">Blog</li>
-    </ul>
+  <li>
+    <Link
+      to="/"
+      className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]"
+    >
+      Home
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/about"
+      className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]"
+    >
+      About Us
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/departments"
+      className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]"
+    >
+      Departments
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/services"
+      className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]"
+    >
+      Services
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/contact"
+      className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]"
+    >
+      Contact Us
+    </Link>
+  </li>
+
+  <li>
+    <Link
+      to="/blog"
+      className="cursor-pointer transition-all duration-300 hover:text-[#135D8C]"
+    >
+      Blog
+    </Link>
+  </li>
+</ul>
+    
     <button className='p-5 py-2 rounded-full border-2 border-[#135D8C] text-[#135D8C] hover:bg-[#135D8C] hover:text-white transition'>Book an Appointment</button>
     </div>
     </nav>

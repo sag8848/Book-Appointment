@@ -179,7 +179,7 @@ const doctors = [
 
 const Doctors = () => {
   return (
-    <section className="bg-gray-50 py-60">
+    <section className="bg-gray-50 py-6">
       <h1 className="text-5xl font-bold text-center text-[#135D8C]">
         Find Your Doctor
       </h1>
