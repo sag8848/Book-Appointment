@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-100 shadow-md transition-all duration-500">
     <div className='flex item-center justify-around gap-10 m-10 z-10'>
-        <h1 className='text-[#135D8C] font-bold text-3xl'>Makalu Everest Hospital</h1>
+        <h1 className='text-[#135D8C] font-bold text-2xl'>Makalu Everest Hospital</h1>
          <ul className="flex gap-10 text-[#129DA8] font-medium pt-3">
   <li>
     <Link
