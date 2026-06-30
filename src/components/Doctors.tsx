@@ -156,6 +156,7 @@ const doctors = [
     degree: "MBBS (BPKIHS), MS (NAMS)",
     experience: "15+ Years Experience",
     time: "10:00 AM - 5:00 PM",
+    description: "Dr. Yagya Raj Kharel is a highly skilled orthopedic surgeon with over 15 years of experience in treating musculoskeletal disorders. He specializes in joint replacement and sports injuries."
   },
   {
     id:2,
@@ -165,6 +166,7 @@ const doctors = [
     degree: "MBBS, MS (ENT Surgeon)",
     experience: "10+ Years Experience",
     time: "10:00 AM - 5:00 PM",
+    description: "Dr. Sanjiv Kumar Thakur is an experienced ENT surgeon with a decade of expertise in treating ear, nose, and throat conditions. He is known for his compassionate care and advanced surgical techniques."
   },
   {
     id:3,
@@ -174,6 +176,7 @@ const doctors = [
     degree: "MBBS, MD",
     experience: "12+ Years Experience",
     time: "10:00 AM - 5:00 PM",
+    description: "Dr. Dinesh Neupane is a dedicated internal medicine specialist with over 12 years of experience in diagnosing and managing complex medical conditions. He is committed to providing personalized care to his patients."
   },
 ];
 
@@ -197,6 +200,7 @@ const Doctors = () => {
             degree={doctor.degree}
             experience={doctor.experience}
             time={doctor.time}
+            description={doctor.description}
           />
         
         ))}
