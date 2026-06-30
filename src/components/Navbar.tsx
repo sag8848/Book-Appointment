@@ -1,7 +1,9 @@
 import React from 'react'
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <>
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-b border-slate-100 shadow-md transition-all duration-500">
@@ -61,9 +63,15 @@ const Navbar = () => {
       Blog
     </Link>
   </li>
+
+    <li> 
+      
+    </li>
 </ul>
     
-    <button className='p-5 py-2 rounded-full border-2 border-[#135D8C] text-[#135D8C] hover:bg-[#135D8C] hover:text-white transition'>Book an Appointment</button>
+    <button onClick={() => navigate("/appointment")}className='p-5 py-2 rounded-full border-2 border-[#135D8C] text-[#135D8C] hover:bg-[#135D8C] hover:text-white transition'>Book an Appointment
+
+    </button>
     </div>
     </nav>
     </>

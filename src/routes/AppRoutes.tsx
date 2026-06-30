@@ -6,6 +6,8 @@ import Department from '../pages/Department';
 import Services from '../pages/Services';
 import Contact from '../pages/Contact';
 import Blog from '../pages/Blog';
+import Doctors from '../components/Doctors';
+import PageNotFound from '../pages/PageNotFound';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const AppRoutes = () => {
@@ -18,6 +20,9 @@ const AppRoutes = () => {
           <Route path="services" element={<Services />} />
           <Route path="contact" element={<Contact />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="/appointment" element={<Doctors />} />
+          <Route path="*" element={<PageNotFound />} />
+               
         </Route>
       </Routes>
        
